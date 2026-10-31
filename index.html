@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Policy Review Agent · Unofficial demo built with Devin - synthetic data</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Cpath d=%22M8 1l7 7-7 7-7-7z%22 fill=%22%231f3a2e%22/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="app/styles.css">
+</head>
+<body>
+  <div class="demo-banner" role="note">Unofficial demo built with Devin - synthetic data</div>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">◆</span>
+      <div>
+        <div class="brand-title">Policy Review Agent</div>
+        <div class="brand-sub">FDE prototype for finance teams · fictional customer: Fernwood Robotics</div>
+      </div>
+    </div>
+    <nav class="tabs" aria-label="Sections">
+      <a href="#/review" data-route="review">1 · Review</a>
+      <a href="#/evaluate" data-route="evaluate">2 · Evaluate</a>
+      <a href="#/compare" data-route="compare">3 · Compare</a>
+      <a href="#/records" data-route="records">Records</a>
+      <a href="#/about" data-route="about">About</a>
+    </nav>
+  </header>
+  <main id="view"></main>
+  <aside id="drawer" class="drawer" aria-hidden="true">
+    <div class="drawer-head"><h3 id="drawer-title">Source record</h3><button class="btn ghost" id="drawer-close" aria-label="Close">✕</button></div>
+    <div id="drawer-body"></div>
+  </aside>
+  <div id="scrim" class="scrim"></div>
+  <footer class="foot">Unofficial demo built with Devin - synthetic data · Not affiliated with or endorsed by Ramp · All people, companies and transactions are fictional.</footer>
+  <script src="data/seed.js"></script>
+  <script src="app/agent.js"></script>
+  <script src="app/app.js"></script>
+</body>
+</html>
